@@ -108,19 +108,27 @@ sample.addEventListener("mousemove", handleMouseOver);
 sample.addEventListener("mouseout", handleMouseOut);
 */
 
-function handleMouseMove(e) {
-  if (lastMouseY !== null) {
+const handleMouseMove = (e) => {
+  if (
+    lastMouseY !== null &&
+    e.clientY >= sample.offsetTop &&
+    e.clientY <= sample.offsetTop + sample.offsetHeight &&
+    e.clientX >= sample.offsetLeft &&
+    e.clientX <= sample.offsetLeft + sample.offsetWidth
+  ) {
     rotationAngle += e.clientY - lastMouseY;
     sample.style.transform = `rotateY(${rotationAngle}deg)`;
   }
   lastMouseY = e.clientY;
-}
+};
 
-function handleMouseUp() {
+const handleMouseUp = () => {
   lastMouseY = null;
-}
-sample.addEventListener("mousedown", function (e) {
+};
+
+sample.addEventListener("mousedown", (e) => {
   lastMouseY = e.clientY;
 });
+
 document.addEventListener("mousemove", handleMouseMove);
 document.addEventListener("mouseup", handleMouseUp);
