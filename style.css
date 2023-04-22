@@ -29,18 +29,16 @@ body {
 }
 
 .displayPic {
-  transform: scale(1);
-  transition: transform 0.3s ease-out;
+  display: absolute;
   overflow: hidden;
-  perspective: 800px;
-  transform-style: preserve-3d;
 }
 
-.displayPic img {
-  width: 555px;
-  height: 340px;
-  margin-left: 30px;
-  margin-top: 90px;
+.displayPic model-viewer {
+  width: 975px;
+  height: 440px;
+  top: 0%;
+  right: 20%;
+  border: none;
 }
 
 .display2 {

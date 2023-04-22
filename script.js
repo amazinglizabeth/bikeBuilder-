@@ -108,6 +108,7 @@ sample.addEventListener("mousemove", handleMouseOver);
 sample.addEventListener("mouseout", handleMouseOut);
 */
 
+/*
 const handleMouseMove = (e) => {
   if (
     lastMouseY !== null &&
@@ -132,3 +133,4 @@ sample.addEventListener("mousedown", (e) => {
 
 document.addEventListener("mousemove", handleMouseMove);
 document.addEventListener("mouseup", handleMouseUp);
+*/

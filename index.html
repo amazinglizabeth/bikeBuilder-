@@ -1,11 +1,13 @@
 <!DOCTYPE html>
   <html lang="en">
-    
+
     <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta http-equiv="X-UA-Compatible" content="ie=edge" />
       <link rel="stylesheet" href="style.css" />
+      <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+      <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
       <title>Bike Builder</title>
     </head>
     <body>
@@ -13,8 +15,7 @@
         <div class="side--1">
              <h3>Cannondale</h3>
              <div class="displayPic">
-                 <img src="BIKE.JPG" class="display1" alt="Bike">
-                 <img src="bike2.png" class="display2" alt="bike">
+                <model-viewer src="bicycle/scene.gltf" alt="bicycle" camera-controls ar ios-src="bicycle/scene.gltf"></model-viewer>
             </div>
             <div class="feedback">
                 <div class="messageIcon">
