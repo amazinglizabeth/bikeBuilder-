@@ -14,6 +14,7 @@ body {
 .bike {
   display: flex;
   min-height: 100%;
+  min-width: 100%;
   box-sizing: border-box;
 }
 
@@ -29,15 +30,15 @@ body {
 }
 
 .displayPic {
-  display: absolute;
+  display: flex;
   overflow: hidden;
 }
 
 .displayPic model-viewer {
-  width: 975px;
+  width: 980px;
   height: 440px;
-  top: 0%;
-  right: 20%;
+  top: 5rem;
+  justify-content: center;
   border: none;
 }
 
@@ -55,22 +56,21 @@ body {
   border-radius: 50%;
   padding: 3px;
   margin-top: 160px;
-  margin-left: 50px;
-  margin-bottom: 40px;
+  justify-content: flex-start;
+  margin-left: 20px;
 }
 
 .ratingIcon img {
   width: 15px;
   margin-top: 172px;
-  margin-bottom: 40px;
-  margin-inline-start: 380px;
+  margin-inline-start: 398px;
 }
 
 .feedback p {
   margin-top: 172px;
-  margin-bottom: 40px;
   font-weight: 500;
   margin-left: 6px;
+  justify-content: flex-end;
 }
 
 /*SIDE 2*/
@@ -245,12 +245,13 @@ span {
   background-color: rgba(207, 206, 204, 0.193);
   padding: 8px;
   border-radius: 10%;
+  display: flex;
 }
 
 .main-footer {
   bottom: 0;
   display: flex;
-  padding-top: 130px;
+  padding-top: 105px;
 }
 
 .footer1 {
@@ -282,4 +283,173 @@ span {
   height: 10px;
   margin-left: 4px;
   margin-top: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+  .bike {
+    flex-direction: column;
+    width: max-content;
+  }
+  .side--1 {
+    height: 35rem;
+    width: 100%;
+  }
+  .displayPic model-viewer {
+    width: 500px;
+    height: 440px;
+    top: 1rem;
+    justify-content: center;
+    border: none;
+  }
+  .messageIcon img {
+    width: 30px;
+    padding: 2px;
+    margin-top: 5px;
+    justify-content: flex-start;
+    margin-left: 10px;
+  }
+
+  .ratingIcon img {
+    width: 15px;
+    margin-top: 12px;
+    justify-content: center;
+  }
+
+  .feedback p {
+    margin-top: 12px;
+    margin-left: 20px;
+  }
+
+  .secondSide {
+    min-height: 100%;
+    width: 100%;
+  }
+
+  .side--2 {
+    margin-right: 5px;
+    margin-left: 15px;
+  }
+  .menu {
+    padding-bottom: 6px;
+  }
+  .menu p {
+    padding-left: 15px;
+    font-size: 12px;
+  }
+
+  .bike--1 {
+    margin-right: 85px;
+  }
+  .row--1 p {
+    margin-left: 200px;
+  }
+  .bike--2 {
+    margin-right: 85px;
+  }
+  .sizes {
+    width: 80%;
+  }
+
+  .measurement {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .measurement h3 {
+    font-size: 9px;
+    font-weight: 600;
+    padding-right: 25px;
+  }
+
+  .cm {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .cm img {
+    margin-left: 150px;
+    width: 60px;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .bike {
+    flex-direction: column;
+    width: 100%;
+  }
+  .side--1 {
+    height: 36rem;
+    width: 100%;
+  }
+  .ratingIcon img {
+    margin-inline-start: 50px;
+  }
+  .bike--1 {
+    margin-right: 5px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bike--2 {
+    margin-right: 5px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .size {
+    width: max-content;
+  }
+  .measurement h3 {
+    font-size: 6px;
+    padding-right: 10px;
+  }
+  .cm {
+    display: flex;
+    flex-direction: row;
+  }
+  .cm p {
+    font-size: 6px;
+    margin-right: 10px;
+    padding: 5px;
+    padding-left: 35px;
+  }
+  .cm img {
+    margin-left: 2px;
+    height: 20px;
+    width: 20px;
+  }
+
+  .footer2 h4 {
+    margin-left: 40px;
+  }
+  .size h4 {
+    margin-inline-start: 60px;
+    font-size: 10px;
+  }
+  .row--1 p {
+    margin-left: 17px;
+  }
+}
+
+@media screen and (min-width: 280px) {
+  .size h3 {
+    font-size: 8px;
+    padding-top: 5px;
+  }
+  .size h4 {
+    margin-inline-start: 15px;
+    font-size: 10px;
+  }
+  .cm p {
+    margin-right: 5px;
+    padding: 5px;
+    padding-left: 23px;
+  }
+  .cm img {
+    margin-left: 2px;
+    height: 20px;
+    width: 20px;
+  }
+  .footer2 h4 {
+    margin-left: 5px;
+  }
 }
