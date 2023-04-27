@@ -292,7 +292,7 @@ span {
   }
   .bike {
     flex-direction: column;
-    width: max-content;
+    min-width: max-content;
   }
   .side--1 {
     height: 35rem;
@@ -381,7 +381,7 @@ span {
   }
   .bike {
     flex-direction: column;
-    width: 100%;
+    min-width: 100%;
   }
   .side--1 {
     height: 36rem;
