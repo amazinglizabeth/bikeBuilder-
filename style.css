@@ -286,6 +286,10 @@ span {
 }
 
 @media screen and (max-width: 1024px) {
+  html,
+  body {
+    border: 6px solid rgba(58, 55, 55, 0.436);
+  }
   .bike {
     flex-direction: column;
     width: max-content;
@@ -372,6 +376,9 @@ span {
 }
 
 @media screen and (max-width: 414px) {
+  body {
+    border: 6px solid rgba(58, 55, 55, 0.436);
+  }
   .bike {
     flex-direction: column;
     width: 100%;
@@ -431,6 +438,9 @@ span {
 }
 
 @media screen and (min-width: 280px) {
+  body {
+    border: 6px solid rgba(58, 55, 55, 0.436);
+  }
   .size h3 {
     font-size: 8px;
     padding-top: 5px;
