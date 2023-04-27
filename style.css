@@ -361,16 +361,19 @@ span {
   .measurement h3 {
     font-size: 9px;
     font-weight: 600;
-    padding-right: 25px;
+    padding-right: 10px;
   }
 
   .cm {
     display: flex;
     justify-content: flex-start;
   }
+  .cm p {
+    margin-left: 25px;
+  }
   .cm img {
-    margin-left: 150px;
-    width: 60px;
+    margin-left: 50px;
+    width: 65px;
     height: 50px;
   }
 }
@@ -407,7 +410,7 @@ span {
   }
   .measurement h3 {
     font-size: 6px;
-    padding-right: 10px;
+    padding-right: 20px;
   }
   .cm {
     display: flex;
@@ -415,14 +418,14 @@ span {
   }
   .cm p {
     font-size: 6px;
-    margin-right: 10px;
+    margin-left: 3px;
     padding: 5px;
-    padding-left: 35px;
+    padding-left: 30px;
   }
   .cm img {
-    margin-left: 2px;
-    height: 20px;
-    width: 20px;
+    margin-left: 30px;
+    height: 40px;
+    width: 40px;
   }
 
   .footer2 h4 {
@@ -456,9 +459,9 @@ span {
     padding-left: 23px;
   }
   .cm img {
-    margin-left: 2px;
-    height: 20px;
-    width: 20px;
+    margin-left: 10px;
+    height: 40px;
+    width: 40px;
   }
   .footer2 h4 {
     margin-left: 5px;
