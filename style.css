@@ -289,10 +289,10 @@ span {
   html,
   body {
     border: 6px solid rgba(58, 55, 55, 0.436);
+    min-width: 100%;
   }
   .bike {
     flex-direction: column;
-    min-width: max-content;
   }
   .side--1 {
     height: 35rem;
@@ -378,10 +378,10 @@ span {
 @media screen and (max-width: 414px) {
   body {
     border: 6px solid rgba(58, 55, 55, 0.436);
+    min-width: 100%;
   }
   .bike {
     flex-direction: column;
-    min-width: 100%;
   }
   .side--1 {
     height: 36rem;
@@ -440,6 +440,7 @@ span {
 @media screen and (min-width: 280px) {
   body {
     border: 6px solid rgba(58, 55, 55, 0.436);
+    min-width: 100%;
   }
   .size h3 {
     font-size: 8px;
