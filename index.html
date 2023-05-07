@@ -15,7 +15,8 @@
         <div class="side--1">
              <h3>Cannondale</h3>
              <div class="displayPic">
-                <model-viewer src="bicycle/scene.gltf" alt="bicycle" camera-controls ar ios-src="bicycle/scene.gltf"></model-viewer>
+                <model-viewer src="bicycle/scene.gltf" class="display1" alt="bicycle" camera-controls ar ios-src="bicycle/scene.gltf"></model-viewer>
+                <model-viewer src="bicycle2/scene.gltf" class="display2"  alt="bicycle" camera-controls ar ios-src="bicycle/scene.gltf"></model-viewer>
             </div>
             <div class="feedback">
                 <div class="messageIcon">
@@ -30,10 +31,10 @@
       <div class="secondSide">
       <div class="side--2">
             <div class="menu">
-                 <p><span>1. Bike and Size</span></p>
-                 <p>2. Groupset</p>
-                 <p>3. Components</p>
-                 <p>4. Services</p>
+                 <a href="#"><span>1. Bike and Size</span></a>
+                 <a href="#">2. Groupset</a>
+                 <a href="#">3. Components</a>
+                 <a href="#">4. Services</a>
             </div>
              <h3>Select Your Bike Model</h3>
              <div class="selecion">
@@ -70,30 +71,35 @@
                 will also vary between different manufacturers. <span>compare cannondale to other brands.</span>
              </P>
              <div class="choice">
-                  <p>XS</p>
-                  <P>S</P>
-                  <P>M</P>
-                  <P>L</P>
-                  <P><span>XL</span></P>
+                  <a  href="#">XS</a>
+                  <a  href="#">S</a>
+                  <a href="#">M</a>
+                  <a  href="#">L</a>
+                  <a href="#"><span>XL</span></a>
              </div>
          </div>
          <div class="size">
              <h3>Find Your Size . CM <span>IN</span></h3>
-             <h4>Need help?</h4>
+             <a href="#">Need help?</a>
          </div>
-         <div class="measurement">
-             <h3>YOUR HEIGHT</h3>
-             <h3>ARMS LENGHT</h3>
-             <h3>CHEST LENGHT</h3>
-             <h3>INNER LEG LENGHT</h3>
-         </div>
-        <div class="cm">
-             <p>CM</p>
-             <P>CM</P>
-             <P>CM</P>
-             <P>CM</P>
-             <img src="search.png" alt="search icon">
-        </div>
+         
+            <form class="measurement">
+                <div class="label">
+                     <label>YOUR HEIGHT</label>
+                     <label>ARMS LENGHT</label>
+                     <label>CHEST LENGHT</label>
+                     <label>INNER LEG LENGHT</label>
+                </div>
+                <div class="input">
+                      <input type="number" name="name" value="CM" placeholder="CM">
+                     <input type="number" name="name" value="CM" placeholder="CM">
+                     <input type="number" name="name" value="CM" placeholder="CM">
+                     <input type="number" name="name" value="CM" placeholder="CM">
+                     <img src="search.png"  alt="search icon">
+                </div>
+                
+            </form>         
+          
      </div>
          <div class="main-footer">
              <div class="footer1">

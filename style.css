@@ -206,49 +206,42 @@ span {
   color: rgba(0, 0, 0, 0.502);
 }
 
-.size h4 {
+.size a {
   color: rgb(52, 139, 226);
   margin-top: 25px;
   margin-inline-start: 222px;
   font-size: 10px;
   font-weight: 600;
+  text-decoration: none;
 }
 
 .measurement {
   display: flex;
+  flex-direction: column;
 }
 
-.measurement h3 {
-  font-size: 9px;
-  font-weight: 600;
-  padding-right: 25px;
-  color: rgba(0, 0, 0, 0.66);
+.label {
+  margin-top: 20px;
+  font-size: 10px;
+}
+.label label {
+  padding-left: 10px;
+}
+input {
+  padding-left: 35px;
+  padding-top: 7px;
+  width: 75px;
+  margin-left: 10px;
 }
 
-.cm {
-  display: flex;
-  margin-top: 2px;
-}
-
-.cm p {
-  font-size: 8px;
-  color: rgba(0, 0, 0, 0.502);
-  border: solid 1px rgba(0, 0, 0, 0.186);
-  margin-top: 5px;
-  margin-right: 25px;
-  padding: 15px;
-  padding-left: 40px;
-  border-radius: 13%;
-}
-.cm img {
+.input img {
   width: 38px;
-  height: 35px;
-  margin-left: 5px;
+  height: 30px;
+  margin-left: 10px;
   margin-top: 7px;
   background-color: rgba(207, 206, 204, 0.193);
   padding: 8px;
   border-radius: 10%;
-  display: flex;
 }
 
 .main-footer {
@@ -361,20 +354,18 @@ span {
     display: flex;
     justify-content: flex-start;
   }
-  .measurement h3 {
+  .label {
     font-size: 9px;
     font-weight: 600;
     padding-right: 10px;
   }
 
-  .cm {
+  .label {
     display: flex;
     justify-content: flex-start;
   }
-  .cm p {
-    margin-left: 25px;
-  }
-  .cm img {
+
+  .input img {
     margin-left: 50px;
     width: 65px;
     height: 50px;
@@ -408,24 +399,19 @@ span {
     flex-direction: column;
   }
 
-  .size {
-    width: max-content;
+  .size a {
+    margin-right: 10px;
   }
-  .measurement h3 {
+  .label {
     font-size: 6px;
     padding-right: 20px;
   }
-  .cm {
+  .input {
     display: flex;
     flex-direction: row;
   }
-  .cm p {
-    font-size: 6px;
-    margin-left: 3px;
-    padding: 5px;
-    padding-left: 40px;
-  }
-  .cm img {
+
+  .input img {
     margin-left: 2px;
     height: 40px;
     width: 40px;
@@ -456,12 +442,8 @@ span {
     margin-inline-start: 5px;
     font-size: 10px;
   }
-  .cm p {
-    margin-right: 5px;
-    padding: 5px;
-    padding-left: 37px;
-  }
-  .cm img {
+
+  .input img {
     margin-left: 10px;
     height: 40px;
     width: 30px;

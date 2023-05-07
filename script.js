@@ -2,11 +2,11 @@
 const bike1 = document.querySelector(".bike--1");
 const bike2 = document.querySelector(".bike--2");
 const sample = document.querySelector(".displayPic");
-const product = document.querySelector(".display1");
 
-let rotation = 180;
+/*let rotation = 180;
 let rotationAngle = 0;
 let lastMouseY = null;
+*/
 
 bike2.addEventListener("click", function () {
   document.querySelector(".display1").style.display = "none";
